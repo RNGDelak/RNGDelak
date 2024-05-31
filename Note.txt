@@ -1,0 +1,43 @@
+bro pls remmember adding code for bounus and setting for the ui progess bar color changes ok?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Currently,limits is 9.999e5314682 (999NoNgNiMiNoNgNi)
+
+use vs code for muti tasking
+
+Limit of tier1 frac (11^(length of highest tier suffix + 1) - 11)/10
+Limit of tier2 frac (11^((((3*2+1)*2+1)*...)...(length of highest tier suffix)times + 1) - 11)/10
+
+		
+
+add chores here
+
+
+1
+2
+3
+4
+5
+
+
+
+add something here...

@@ -1,0 +1,996 @@
+:root {
+  --theme: #000000;
+  --avialablebtn: #007bff;
+  --unaivablebtn: #dc3545;
+  --unaivablebtnpurchase: #dc3545;
+  --avialablebtnpurchase: #28a745;
+  --commoncolor: white;
+  --uncommoncolor: green;
+  --rarecolor: blue;
+  --unsualcolor: magenta;
+  --epiccolor: purple;
+  --uniquecolor: lightgreen;
+  --legendarycolor: yellow;
+  --mythicalcolor: red;
+  --etherealcolor: gray;
+  --backroundprogessbarcolor: black;
+  --backroundprogessbarvaule: rgb(0, 255, 0);
+}
+
+progress::-webkit-progress-bar {
+  background-color: var(--backroundprogessbarcolor);
+}
+
+progress::-webkit-progress-value {
+  background-color: var(--backroundprogessbarvaule);
+}
+
+body {
+  font-family: "Times New Roman";
+  background-color: var(--theme);
+}
+#Timeplayedtext,
+#devdescription,
+#rngtestoutput,
+#SEtingNormalsetting,
+#SEtingAdvancesetting,
+#SEtingPreloadssetting,
+#SEtingDevsetting,
+#rollRecord,
+#rollRecord1,
+#rollRecord2,
+#RNGppts,
+#rollCount,
+#rollResAnnounce,
+#lagpreventer1,
+#lagpreventer2,
+#lagpreventer3,
+#rollResult,
+#myChart,
+#NOTHINGYET,
+#Credittext,
+#Staticticstext,
+#chances {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+#loadingimg {
+  top: 0px;
+  left: 0px;
+  width: 1811px;
+  height: 765px;
+  transition: 2.5s;
+}
+
+.glyphselectionbtn {
+  width: 225px;
+  height: 225px;
+  transition: 0.5s;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.glyphdname {
+  position: absolute;
+  font-size: 50px;
+}
+
+.glyphselectionbtn:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+.glyphselectionbtn:active {
+  opacity: 0.7;
+  transform: scale(0.95);
+}
+
+.glyphdescription {
+  justify-content: center;
+  position: absolute;
+  display: flex;
+  font-size: 25px;
+}
+
+.glyphdescription {
+  transition: 0.5s;
+}
+
+#rollResult {
+  font-size: 70px;
+  margin: 0px;
+  visibility: hidden;
+}
+
+#glyphpromt {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  left: 550px
+}
+
+.btnContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.glyphselectionbtncontainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#rollBtn {
+  float: left;
+  all: unset;
+  font-size: 30px;
+  margin-left: -250px;
+  background-color: #000000;
+  border-color: #007bff;
+  color: white;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: 5px solid #007bff;
+  text-align: center;
+  transition: 0.5s;
+}
+
+#rollBtn:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+#rollBtn:active {
+  opacity: 0.7;
+  transform: scale(0.95);
+}
+
+#chances {
+  visibility: hidden;
+}
+
+#raityslider {
+  position: absolute;
+  top: 400px;
+  right: 50px;
+  height: 450px;
+  width: 1295px;
+  background-color: #000000;
+  border-radius: 10px;
+  border: 5px solid white;
+  overflow-x: scroll;
+}
+
+.listtheta {
+  float: left;
+  display: inline-block;
+  position: relative;
+  height: 400px;
+  width: 405px;
+  font-size: 20px;
+  background-color: #000000;
+  border-radius: 10px;
+  border: 5px solid white;
+  overflow-y: scroll;
+}
+
+.listElement {
+  float: left;
+  display: inline-block;
+  position: relative;
+  margin-left: 12.5px;
+  width: 260px;
+  height: 50px;
+  background-color: black;
+  border: 5px solid #ffffff;
+  border-radius: 10px;
+  line-height: 50px;
+  padding-left: 10px;
+  font-size: 14px;
+
+}
+
+.listChance {
+  float: left;
+  display: inline-block;
+  width: 70px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 10px;
+  height: 50px;
+  line-height: 50px;
+  margin-left: 0px;
+  background-color: black;
+  border: 5px solid #ffffff;
+}
+
+#list div {
+  margin-bottom: -30px;
+}
+
+#list1 {
+  position: absolute;
+  top: 900px;
+  right: 825px;
+  height: 800px;
+  width: 520px;
+  background-color: #000000;
+  border-radius: 10px;
+  border: 5px solid white;
+  overflow-y: scroll;
+}
+
+#list1Title {
+  display: block;
+  width: 350px;
+  text-align: center;
+  height: 10px;
+  line-height: 10px;
+  font-size: 30px;
+}
+
+.listLogs {
+  float: left;
+  display: inline-block;
+  font-size: 13px;
+  border-radius: 10px;
+  width: 500px;
+  text-align: center;
+  height: 0px;
+  line-height: 50px;
+  margin-left: 10px;
+  background-color: black;
+  border: 2px solid #ffffff;
+}
+
+#rollBtn1 {
+  float: left;
+  all: unset;
+  margin-left: 250px;
+  margin-top: -60px;
+  background-color: #000000;
+  border-color: #007bff;
+  color: white;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: 5px solid #ff0000;
+  text-align: center;
+  font-size: 10px;
+  transition: 0.5s;
+}
+
+#rollBtn1:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+#rollBtn1:active {
+  opacity: 0.7;
+  transform: scale(0.95);
+}
+
+#rollBtn1:hover {
+  opacity: 0.7;
+}
+
+#tiershowlower {
+  display: inline-block;
+  border-color: #000000;
+  background-color: #000000;
+  color: white;
+  width: 50px;
+  height: 15px;
+  border-radius: 4px;
+  border: 2px solid #ffffff;
+  text-align: center;
+  font-size: 10px;
+}
+
+#tiershowupper {
+  display: inline-block;
+  border-color: #000000;
+  background-color: #000000;
+  color: white;
+  width: 50px;
+  height: 15px;
+  border-radius: 4px;
+  border: 2px solid #ffffff;
+  text-align: center;
+  font-size: 10px;
+}
+
+#recentrecord {
+  display: inline-block;
+  border-color: #000000;
+  background-color: #000000;
+  color: white;
+  width: 50px;
+  height: 15px;
+  border-radius: 4px;
+  border: 2px solid #ffffff;
+  text-align: center;
+  font-size: 10px;
+}
+
+#recenrolls {
+  display: inline-block;
+  border-color: #000000;
+  background-color: #000000;
+  color: white;
+  width: 50px;
+  height: 15px;
+  border-radius: 4px;
+  border: 2px solid #ffffff;
+  text-align: center;
+  font-size: 10px;
+}
+
+#refreshBtn {
+  all: unset;
+  margin-left: 750px;
+  margin-top: -60px;
+  background-color: #000000;
+  border-color: #ffffff;
+  color: white;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: 5px solid #ffffff;
+  text-align: center;
+  font-size: 10px;
+  transition: 0.5s;
+}
+
+#refreshBtn:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+#refreshBtn:active {
+  opacity: 0.7;
+  transform: scale(0.95);
+}
+
+#performancehideBtn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #000000;
+  border-color: #ffffff;
+  color: white;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: 5px solid #ffffff;
+  text-align: center;
+  font-size: 10px;
+}
+
+#performancehideBtn:hover {
+  opacity: 0.7;
+}
+
+#menu {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 750px;
+  width: 300px;
+  background-color: #000000;
+  border-radius: 10px;
+  border: 5px solid white;
+  overflow-y: scroll;
+}
+
+.menuelement {
+  display: inline-block;
+  font-size: 40px;
+  border-radius: 10px;
+  margin-top: 15px;
+  width: 240px;
+  text-align: center;
+  height: 65px;
+  line-height: 50px;
+  margin-left: 10px;
+  background-color: black;
+  border: 5px solid #ffffff;
+  transition: 0.5s;
+}
+
+.menuelement:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+.menuelement:active {
+  opacity: 0.7;
+  transform: scale(0.95);
+}
+
+#MenuTitle {
+  font-family: Arial;
+  font-style: italic;
+  font-size: 35px;
+}
+
+#listRECORD {
+  position: absolute;
+  top: 900px;
+  right: 50px;
+  height: 800px;
+  width: 760px;
+  background-color: #000000;
+  border-radius: 10px;
+  border: 5px solid white;
+  overflow-y: scroll;
+}
+
+#listRECORDTitle {
+  display: block;
+  width: 760px;
+  text-align: center;
+  height: 10px;
+  line-height: 10px;
+  font-size: 30px;
+}
+
+.listRECORDlog {
+  float: left;
+  display: inline-block;
+  font-size: 13px;
+  border-radius: 10px;
+  width: 740px;
+  text-align: center;
+  height: 0px;
+  line-height: 50px;
+  margin-left: 10px;
+  background-color: black;
+  border: 2px solid #ffffff;
+}
+
+#Audio {
+  width: 350px;
+}
+
+#Audiolist {
+  position: absolute;
+  top: 780px;
+  left: 0px;
+  height: 200px;
+  width: 400px;
+  border-radius: 10px;
+  overflow-y: scroll;
+  background-color: black;
+  border: 5px solid #ffffff;
+}
+
+#RNGdelakexpdisplay {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100px;
+  width: 650px;
+}
+
+#RNGdelakexpdisplayprogessbar {
+  position: relative;
+  top: 10px;
+  right: -10px;
+  height: 35px;
+  width: 630px;
+  border-radius: 10px;
+  color: white;
+  border: 5px solid #ffffff;
+  transition: 0.5s;
+}
+
+#RNGdelakexpdisplaytext {
+  text-align: center;
+  color: white;
+}
+
+#RNGdelakexpdisplaytextpercent {
+  top: 3px;
+  right: 325px;
+  position: absolute;
+  text-align: center;
+  color: white;
+}
+
+#enterdevpassword {
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+  top: 0px;
+  right: -700px;
+  height: 50px;
+  width: 650px;
+  color: white;
+  transition: 0.5s;
+  border-radius: 10px;
+  border: 5px solid #ffffff;
+}
+
+#enterdevpasswordsubmit {
+  font-size: 25px;
+  text-align: center;
+  position: relative;
+
+  margin-top: 20px;
+  right: -900px;
+  height: 50px;
+  width: 250px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  transition: 0.5s;
+  border: 5px solid #ffffff;
+}
+
+#enterdevpasswordsubmit:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+#enterdevpasswordsubmit:active {
+  opacity: 0.7;
+  transform: scale(0.95);
+}
+
+#Preloadssetting {
+  position: relative;
+  margin-left : 325px;
+  height: 150px;
+  width: 1650px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  transition: 0.5s;
+  border: 5px solid #000000;
+
+}
+#Advancesetting {
+  position: relative;
+  margin-left : 325px;
+  height: 200px;
+  width: 1650px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  transition: 0.5s;
+  border: 5px solid #000000;
+
+}
+#chooseprogessbardelakexpupdatename
+{
+  margin-top : 35px;
+  font-size: 35px;
+}
+#chooseprogessbardelakexpupdate 
+{
+  font-size: 25px;
+  position: relative;
+  width: 250px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  transition: 0.5s;
+  border: 5px solid #ffffff;
+}
+#chooseprogessbardelakexpupdate:hover
+{
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+#chooseprogessbardelakexpupdate:active
+{
+  opacity: 0.7;
+  transform: scale(0.95);
+}
+#progessbardelakexpupdateinterval{
+  all: unset;
+  width: 100px;
+  height: 25px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  transition: 0.5s;
+  border: 5px solid #ffffff;
+}
+#progessbardelakexpupdateinterval:hover
+{
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+#progessbardelakexpupdateinterval:active
+{
+  opacity: 0.7;
+  transform: scale(0.95);
+}
+#advancesettiongrefresh {
+    position: relative;
+  margin-top: 10px;
+  font-size: 25px;
+    width: 150px;
+    height: 55px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+    border: 5px solid #ffffff;
+  }
+#advancesettiongrefresh:hover
+{
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+#advancesettiongrefresh:active
+{
+  opacity: 0.7;
+  transform: scale(0.95);
+}
+
+#choosetheme 
+{
+  font-size: 25px;
+  position: relative;
+  width: 250px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  transition: 0.5s;
+  border: 5px solid #ffffff;
+}
+#choosetheme:hover
+{
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+#choosetheme:active
+{
+  opacity: 0.7;
+  transform: scale(0.95);
+}
+#choosethemename
+{
+  margin-top : 35px;
+  font-size: 35px;
+}
+#preloadsettiongrefresh {
+  position: relative;
+margin-top: 10px;
+font-size: 25px;
+  width: 150px;
+  height: 55px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  transition: 0.5s;
+  border: 5px solid #ffffff;
+}
+#preloadsettiongrefresh:hover
+{
+opacity: 0.7;
+transform: scale(1.05);
+}
+#preloadsettiongrefresh:active
+{
+opacity: 0.7;
+transform: scale(0.95);
+}
+#HTMLeditbox
+{
+  text-align: left;
+  justify-content: top;
+    position: relative;
+    margin-top: 20px;
+    left: 0px;
+    font-size: 25px;
+    width: 1650px;
+    height: 2550px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+    border: 5px solid #ffffff;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+}
+#Headeditbox
+{
+  text-align: left;
+  justify-content: top;
+    position: relative;
+    margin-top: 20px;
+    left: 0px;
+    font-size: 25px;
+    width: 1650px;
+    height: 550px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+    border: 5px solid #ffffff;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+}
+#Scripteditbox
+{
+  text-align: left;
+  justify-content: top;
+    position: relative;
+    margin-top: 20px;
+    left: 0px;
+    font-size: 25px;
+    width: 1650px;
+    height: 550px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+    border: 5px solid #ffffff;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+}
+#devsetting
+{
+  position: relative;
+  margin-left : 325px;
+  height: 2000px;
+  width: 1650px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  transition: 0.5s;
+  border: 5px solid black;
+}
+#devsettingrefresh1
+{
+    position: relative;
+  margin-top: 10px;
+  font-size: 25px;
+  left: 15px;
+    width: 150px;
+    height: 55px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+    border: 5px solid #ffffff;
+}
+#devsettingrefresh1:hover
+{
+opacity: 0.7;
+transform: scale(1.05);
+}
+#devsettingrefresh1:active
+{
+opacity: 0.7;
+transform: scale(0.95);
+}
+#devsettingrefresh2
+{
+  float:left;
+    position: relative;;
+  margin-top: 10px;
+  font-size: 25px;
+    width: 150px;
+    height: 55px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+    border: 5px solid #ffffff;
+}
+#devsettingrefresh2:hover
+{
+opacity: 0.7;
+transform: scale(1.05);
+}
+#devsettingrefresh2:active
+{
+opacity: 0.7;
+transform: scale(0.95);
+}
+#devsettingrefresh3
+{
+    position: relative;
+  margin-top: 10px;
+  font-size: 25px;
+  left: 15px;
+    width: 150px;
+    height: 55px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+    border: 5px solid #ffffff;
+}
+#devsettingrefresh3:hover
+{
+opacity: 0.7;
+transform: scale(1.05);
+}
+#devsettingrefresh3:active
+{
+opacity: 0.7;
+transform: scale(0.95);
+}
+#devsettingrefresh4
+{
+  float:left;
+    position: relative;;
+  margin-top: 10px;
+  font-size: 25px;
+    width: 150px;
+    height: 55px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+    border: 5px solid #ffffff;
+}
+#devsettingrefresh4:hover
+{
+opacity: 0.7;
+transform: scale(1.05);
+}
+#devsettingrefresh4:active
+{
+opacity: 0.7;
+transform: scale(0.95);
+}
+#devsettingrefresh5
+{
+    position: relative;
+  margin-top: 10px;
+  font-size: 25px;
+  left: 15px;
+    width: 150px;
+    height: 55px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+    border: 5px solid #ffffff;
+}
+#devsettingrefresh5:hover
+{
+opacity: 0.7;
+transform: scale(1.05);
+}
+#devsettingrefresh5:active
+{
+opacity: 0.7;
+transform: scale(0.95);
+}
+#devsettingrefresh6
+{
+  float:left;
+    position: relative;;
+  margin-top: 10px;
+  font-size: 25px;
+    width: 150px;
+    height: 55px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+    border: 5px solid #ffffff;
+}
+#devsettingrefresh6:hover
+{
+opacity: 0.7;
+transform: scale(1.05);
+}
+#devsettingrefresh6:active
+{
+opacity: 0.7;
+transform: scale(0.95);
+}
+#Codeentry
+{
+  text-align: center;
+  justify-content: center;
+    position: relative;
+    margin-top: 20px;
+    left: 350px;
+    font-size: 25px;
+    width: 1250px;
+    height: 75px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+    border: 5px solid #ffffff;
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+}
+#Codesubmit
+{
+    position: relative;;
+  margin-top: 80px;
+  margin-left: 250px;
+  font-size: 25px;
+    width: 150px;
+    height: 55px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+    border: 5px solid #ffffff;
+}
+#Codesubmit:hover
+{
+opacity: 0.7;
+transform: scale(1.05);
+}
+#Codesubmit:active
+{
+opacity: 0.7;
+transform: scale(0.95);
+}
+
+#vaulerngrequire
+{
+    position: relative;
+  margin-top: 10px;
+  font-size: 20px;
+  left: 10px;
+    width: 250px;
+    height: 45px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+    border: 5px solid #ffffff;
+}
+#vaulerngrequire:hover
+{
+opacity: 0.7;
+transform: scale(1.05);
+}
+#vaulerngrequire:active
+{
+opacity: 0.7;
+transform: scale(0.95);
+}
+
+#rngtest
+{
+    position: relative;
+  margin-top: 10px;
+  font-size: 20px;
+  left: 1050px;
+    width: 250px;
+    height: 45px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: 0.5s;
+    border: 5px solid #ffffff;
+}
+#rngtest:hover
+{
+opacity: 0.7;
+transform: scale(1.05);
+}
+#rngtest:active
+{
+opacity: 0.7;
+transform: scale(0.95);
+}
